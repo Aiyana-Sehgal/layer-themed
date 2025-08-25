@@ -2,23 +2,23 @@ import { Card } from "@/components/ui/card";
 import { Shield, Heart, Zap, Mountain, Sword, Users } from "lucide-react";
 
 const AboutSection = () => {
-  const breathingStyles = [
+  const techDomains = [
     {
       icon: Zap,
-      name: "Thunder Breathing",
-      description: "Lightning-fast strikes that cut through the darkness",
+      name: "Research & Innovation",
+      description: "Lightning-fast research that breaks through technological barriers",
       color: "thunder-gradient"
     },
     {
       icon: Heart,
-      name: "Flame Breathing",
-      description: "Passionate techniques that burn away evil",
+      name: "Hackathons & Competitions",
+      description: "Passionate coding sessions that ignite innovative solutions",
       color: "flame-gradient"
     },
     {
       icon: Mountain,
-      name: "Water Breathing",
-      description: "Fluid movements that adapt to any situation",
+      name: "Cloud & DevOps",
+      description: "Fluid deployment strategies that adapt to any infrastructure",
       color: "water-gradient"
     }
   ];
@@ -47,11 +47,11 @@ const AboutSection = () => {
         {/* Main heading */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            About the <span className="bg-flame-gradient bg-clip-text text-transparent">Demon Slayer Corps</span>
+            About <span className="bg-flame-gradient bg-clip-text text-transparent">QDC SRMIST</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            For centuries, we have stood as humanity's guardian against the supernatural threats that lurk in the shadows. 
-            Join an elite organization dedicated to protecting the innocent and maintaining the balance between worlds.
+            The Qwiklabs Developer Club at SRMIST is an elite community of passionate developers and researchers. 
+            Join us to participate in cutting-edge research, innovative hackathons, and exclusive tech events.
           </p>
         </div>
 
@@ -61,9 +61,9 @@ const AboutSection = () => {
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">Our Mission</h3>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                "To eliminate demons and protect humanity through the mastery of breathing techniques, 
-                unwavering courage, and the bonds of brotherhood. We are the blade that cuts through darkness, 
-                the light that guides the lost, and the shield that guards the innocent."
+                "To foster innovation and excellence in technology through research, collaboration, and continuous learning. 
+                We are the catalyst for breakthrough ideas, the bridge between theory and practice, 
+                and the forge where future tech leaders are shaped."
               </p>
             </div>
           </Card>
@@ -72,19 +72,19 @@ const AboutSection = () => {
         {/* Breathing Styles */}
         <div className="mb-20">
           <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Master the <span className="bg-water-gradient bg-clip-text text-transparent">Breathing Techniques</span>
+            Master the <span className="bg-water-gradient bg-clip-text text-transparent">Tech Domains</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {breathingStyles.map((style, index) => {
-              const Icon = style.icon;
+            {techDomains.map((domain, index) => {
+              const Icon = domain.icon;
               return (
                 <Card key={index} className="p-6 group hover:shadow-breathing transition-all duration-500 bg-card/30 backdrop-blur-sm border-border hover:border-primary/30">
                   <div className="text-center">
-                    <div className={`mx-auto w-16 h-16 bg-${style.color} rounded-full flex items-center justify-center mb-6 group-hover:animate-breathing`}>
+                    <div className={`mx-auto w-16 h-16 bg-${domain.color} rounded-full flex items-center justify-center mb-6 group-hover:animate-breathing`}>
                       <Icon className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="text-xl font-bold mb-4 text-foreground">{style.name}</h4>
-                    <p className="text-muted-foreground leading-relaxed">{style.description}</p>
+                    <h4 className="text-xl font-bold mb-4 text-foreground">{domain.name}</h4>
+                    <p className="text-muted-foreground leading-relaxed">{domain.description}</p>
                   </div>
                 </Card>
               );
@@ -118,7 +118,7 @@ const AboutSection = () => {
           <div className="inline-block p-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl border border-primary/20">
             <h4 className="text-2xl font-bold mb-4">Ready to Begin Your Journey?</h4>
             <p className="text-muted-foreground mb-6">
-              "Those who master their breathing can overcome any obstacle"
+              "Those who master their code can overcome any challenge"
             </p>
             <div className="w-12 h-1 bg-flame-gradient mx-auto rounded-full animate-breathing"></div>
           </div>

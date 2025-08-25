@@ -26,7 +26,7 @@ const ContactSection = () => {
     setTimeout(() => {
       toast({
         title: "Application Submitted!",
-        description: "Your journey to becoming a Demon Slayer begins now. We'll contact you within 24 hours.",
+        description: "Your journey to becoming a QDC member begins now. We'll contact you within 24 hours.",
       });
       setFormData({ name: "", email: "", phone: "", breathingStyle: "", message: "" });
       setIsSubmitting(false);
@@ -43,18 +43,18 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Headquarters",
-      info: "Mount Sagiri Training Grounds\nJapan"
+      title: "Club Location",
+      info: "SRM Institute of Science & Technology\nKattankulathur, Chennai"
     },
     {
       icon: Phone,
-      title: "Emergency Line",
-      info: "+81-XXX-DEMON\n24/7 Demon Hotline"
+      title: "Contact Line",
+      info: "+91-XXX-XXXX-XXX\nClub Coordination"
     },
     {
       icon: Mail,
-      title: "Recruitment Office",
-      info: "recruit@demonslayer.corps\ninfo@demonslayer.corps"
+      title: "Official Email",
+      info: "qdc@srmist.edu.in\nwww.qdcsrmist.in"
     }
   ];
 
@@ -64,11 +64,11 @@ const ContactSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Join Our <span className="bg-flame-gradient bg-clip-text text-transparent">Ranks</span>
+            Join Our <span className="bg-flame-gradient bg-clip-text text-transparent">Club</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ready to embark on your journey as a Demon Slayer? Submit your application and take the first step 
-            towards protecting humanity from the forces of darkness.
+            Ready to embark on your journey as a Developer? Submit your application and take the first step 
+            towards mastering cutting-edge technologies and innovative research.
           </p>
         </div>
 
@@ -131,13 +131,13 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
-                    Preferred Breathing Style
+                    Technical Expertise
                   </label>
                   <Input
                     name="breathingStyle"
                     value={formData.breathingStyle}
                     onChange={handleInputChange}
-                    placeholder="Water, Flame, Thunder, etc."
+                    placeholder="React, Python, Cloud, AI/ML, etc."
                     className="bg-muted/20 border-border focus:border-primary transition-colors"
                   />
                 </div>
@@ -145,13 +145,13 @@ const ContactSection = () => {
 
               <div>
                 <label className="text-sm font-medium text-foreground mb-2 block">
-                  Why do you want to join the Demon Slayer Corps? *
+                  Why do you want to join QDC SRMIST? *
                 </label>
                 <Textarea
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Tell us about your motivation, experience, and what drives you to protect humanity..."
+                  placeholder="Tell us about your motivation, projects, research interests, and what drives you to innovate..."
                   rows={5}
                   required
                   className="bg-muted/20 border-border focus:border-primary transition-colors resize-none"
@@ -218,9 +218,9 @@ const ContactSection = () => {
                   <Sword className="w-8 h-8 text-white" />
                 </div>
                 <blockquote className="text-lg font-medium text-foreground mb-4">
-                  "No matter how many people you may lose, you have no choice but to go on living."
+                  "Innovation distinguishes between a leader and a follower."
                 </blockquote>
-                <cite className="text-muted-foreground">— Tanjiro Kamado, Demon Slayer</cite>
+                <cite className="text-muted-foreground">— Steve Jobs, Tech Pioneer</cite>
                 <div className="w-12 h-1 bg-flame-gradient mx-auto mt-4 rounded-full"></div>
               </div>
             </Card>
@@ -232,10 +232,10 @@ const ContactSection = () => {
                   <Phone className="w-5 h-5 text-destructive" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-destructive mb-2">Emergency Demon Sightings</h4>
+                  <h4 className="text-lg font-bold text-destructive mb-2">Tech Support & Guidance</h4>
                   <p className="text-muted-foreground text-sm">
-                    If you encounter a demon, do not engage. Contact our emergency line immediately. 
-                    Trained Hashira will be dispatched to your location.
+                    Need help with projects or research? Contact our tech support team immediately. 
+                    Senior members will provide guidance and mentorship.
                   </p>
                 </div>
               </div>

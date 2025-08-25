@@ -7,31 +7,31 @@ const TimelineSection = () => {
       step: 1,
       title: "Application Submission",
       duration: "1 Day",
-      description: "Submit your application with personal details and motivation letter. Our recruitment team will review your application within 24 hours.",
+      description: "Submit your application with technical background and project portfolio. Our team will review your application within 24 hours.",
       icon: Clock,
       status: "active"
     },
     {
       step: 2,
-      title: "Physical Assessment",
+      title: "Technical Interview",
       duration: "3 Days",
-      description: "Undergo rigorous physical and mental evaluations. Test your endurance, strength, and determination to face supernatural threats.",
+      description: "Demonstrate your coding skills and problem-solving abilities. Showcase your passion for technology and innovation.",
       icon: Users,
       status: "pending"
     },
     {
       step: 3,
-      title: "Breathing Technique Training",
-      duration: "2 Weeks",
-      description: "Master the fundamental breathing techniques. Learn to harness your inner strength and unlock your full potential.",
+      title: "Project Assignment",
+      duration: "1 Week",
+      description: "Complete a technical challenge that tests your development skills. Submit your solution with documentation.",
       icon: Sword,
       status: "pending"
     },
     {
       step: 4,
       title: "Final Selection",
-      duration: "7 Days",
-      description: "Face the ultimate test on Mount Fujikasane. Survive seven nights among demons to earn your place in the Corps.",
+      duration: "2 Days",
+      description: "Present your project and participate in a group discussion. Demonstrate leadership potential and teamwork skills.",
       icon: Trophy,
       status: "pending"
     }
@@ -137,13 +137,13 @@ const TimelineSection = () => {
           <Card className="p-8 max-w-2xl mx-auto bg-gradient-to-r from-primary/5 to-secondary/5 border-primary/20">
             <h3 className="text-2xl font-bold mb-4 text-foreground">Important Note</h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              The recruitment process is designed to be challenging. Only those with unwavering determination 
-              and pure intentions will succeed. Remember: "The weak have no rights or choices. Their only 
-              fate is to be relentlessly crushed by others."
+              The recruitment process is designed to identify passionate developers. Only those with unwavering dedication 
+              to learning and innovation will succeed. Remember: "In the world of technology, continuous learning 
+              is the key to staying ahead."
             </p>
             <div className="flex items-center justify-center space-x-2">
               <Sword className="w-5 h-5 text-primary" />
-              <span className="text-primary font-medium">Total Duration: ~3-4 Weeks</span>
+              <span className="text-primary font-medium">Total Duration: ~2 Weeks</span>
             </div>
           </Card>
         </div>

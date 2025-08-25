@@ -44,10 +44,10 @@ const HeroSection = () => {
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               <span className="block bg-flame-gradient bg-clip-text text-transparent animate-breathing">
-                Join the Elite
+                Master Your
               </span>
               <span className="block text-foreground">
-                Demon Slayer Corps
+                Developer Journey
               </span>
             </h1>
             <div className="w-24 h-1 bg-flame-gradient mx-auto rounded-full"></div>
@@ -55,8 +55,8 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Protect humanity from the darkness. Master the art of breathing techniques. 
-            Become a legendary demon slayer and forge your destiny.
+            Join QDC SRMIST and master cutting-edge technologies. Submit research papers, participate in hackathons, 
+            and forge your path as an elite developer.
           </p>
 
           {/* Stats */}
@@ -65,22 +65,22 @@ const HeroSection = () => {
               <div className="mx-auto w-16 h-16 bg-flame-gradient rounded-full flex items-center justify-center mb-4 group-hover:animate-breathing">
                 <Swords className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-secondary">500+</div>
-              <div className="text-muted-foreground">Active Slayers</div>
+              <div className="text-3xl font-bold text-secondary">200+</div>
+              <div className="text-muted-foreground">Active Members</div>
             </div>
             <div className="text-center group">
               <div className="mx-auto w-16 h-16 bg-water-gradient rounded-full flex items-center justify-center mb-4 group-hover:animate-breathing">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-accent">1000+</div>
-              <div className="text-muted-foreground">Lives Protected</div>
+              <div className="text-3xl font-bold text-accent">50+</div>
+              <div className="text-muted-foreground">Events Organized</div>
             </div>
             <div className="text-center group">
               <div className="mx-auto w-16 h-16 bg-thunder-gradient rounded-full flex items-center justify-center mb-4 group-hover:animate-breathing">
                 <Target className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-primary">99%</div>
-              <div className="text-muted-foreground">Success Rate</div>
+              <div className="text-3xl font-bold text-primary">100+</div>
+              <div className="text-muted-foreground">Research Papers</div>
             </div>
           </div>
 
@@ -107,7 +107,7 @@ const HeroSection = () => {
           {/* Breathing technique hint */}
           <div className="pt-12">
             <p className="text-sm text-muted-foreground mb-4">
-              "Breathing is the foundation of all techniques"
+              "Code is the foundation of all innovations"
             </p>
             <div className="animate-breathing inline-block p-3 rounded-full bg-muted/20 backdrop-blur-sm">
               <ChevronDown className="w-6 h-6 text-secondary animate-pulse" />

@@ -42,9 +42,9 @@ const Navbar = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold bg-flame-gradient bg-clip-text text-transparent">
-                Demon Slayer Corps
+                QDC SRMIST
               </h1>
-              <p className="text-xs text-muted-foreground">Recruitment Division</p>
+              <p className="text-xs text-muted-foreground">Qwiklabs Developer Club</p>
             </div>
           </div>
 
@@ -69,7 +69,7 @@ const Navbar = () => {
               className="bg-flame-gradient hover:shadow-flame transition-all duration-300 font-semibold"
               onClick={() => scrollToSection("contact")}
             >
-              Join the Corps
+              Join the Club
             </Button>
           </div>
 
@@ -100,7 +100,7 @@ const Navbar = () => {
                 className="w-full bg-flame-gradient hover:shadow-flame transition-all duration-300 font-semibold mt-4"
                 onClick={() => scrollToSection("contact")}
               >
-                Join the Corps
+                Join the Club
               </Button>
             </div>
           </div>
