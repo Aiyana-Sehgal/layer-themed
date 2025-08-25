@@ -63,6 +63,18 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			backgroundImage: {
+				'flame-gradient': 'var(--flame-gradient)',
+				'water-gradient': 'var(--water-gradient)',
+				'thunder-gradient': 'var(--thunder-gradient)',
+			},
+			boxShadow: {
+				'breathing': 'var(--breathing-glow)',
+				'flame': 'var(--flame-glow)',
+			},
+			transitionTimingFunction: {
+				'breathing': 'cubic-bezier(0.4, 0, 0.2, 1)',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -84,11 +96,37 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'breathing': {
+					'0%, 100%': { 
+						transform: 'scale(1)',
+						boxShadow: 'var(--breathing-glow)'
+					},
+					'50%': { 
+						transform: 'scale(1.05)',
+						boxShadow: 'var(--flame-glow)'
+					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'slash': {
+					'0%': { transform: 'translateX(-100%) rotate(-45deg)' },
+					'100%': { transform: 'translateX(100%) rotate(-45deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'breathing': 'breathing 3s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'fade-in': 'fade-in 0.8s ease-out',
+				'slash': 'slash 1.5s ease-in-out infinite'
 			}
 		}
 	},
